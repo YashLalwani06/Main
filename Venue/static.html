@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venues</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Available Venues</h1>
+
+    <div class="venue-table">
+        <div class="venue-row">
+            <div class="venue-container venue-one">
+                <div class="venue-description">
+                    <h2>Courtyard by Marriot</h2>
+                    <p><strong>Capacity:</strong> 200 guests</p>
+                    <p><strong>Address:</strong> Block B Sarabhai Campus, Near Genda Circle, Alembic Rd, Vadodara, Gujarat 390023</p>
+                    <p><strong>Suitable for:</strong> Corporate Meetings, College Events</p>
+                </div>
+                <div class="venue-image">
+                    <img src="MixCollage-04-Oct-2024-01-15-PM-8057.jpg" alt="Venue One Image" onclick="openModal('MixCollage-04-Oct-2024-01-15-PM-8057.jpg')">
+                </div>
+            </div>
+            <div class="venue-container venue-two">
+                <div class="venue-description">
+                    <h2>Gangaur Farm</h2>
+                    <p><strong>Capacity:</strong> 100 guests</p>
+                    <p><strong>Address:</strong> Sindhrot Kotna Road, Sindhrot, Vadodara, Gujarat 391330</p>
+                    <p><strong>Suitable for:</strong> Family Gaatherings, Parties, College Events</p>
+                </div>
+                <div class="venue-image">
+                    <img src="FARM.jpg" alt="Venue Two Image" onclick="openModal('FARM.jpg')">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="venue-row opposite-row">
+            <div class="venue-container venue-three">
+                <div class="venue-description">
+                    <h2>Kalaghoda Effhotel by Sayaji</h2>
+                    <p><strong>Capacity:</strong> 300 guests</p>
+                    <p><strong>Address:</strong>  Near, Kala Ghoda Cir, Sarod, Sayajiganj, Vadodara, Gujarat 390005</p>
+                    <p><strong>Suitable for:</strong> Birthday Parties, Small Gatherings</p>
+                </div>
+                <div class="venue-image">
+                    <img src="hotel.jpg" alt="Venue Three Image" onclick="openModal('hotel.jpg')">
+                </div>
+            </div>
+            <div class="venue-container venue-four">
+                <div class="venue-description">
+                    <h2>Sun-City Resort</h2>
+                    <p><strong>Capacity:</strong> 150 guests</p>
+                    <p><strong>Address:</strong>  Next to Chandan multiplex,Gotri-sherkhi, road, Vadodara, Gujarat 391330</p>
+                    <p><strong>Suitable for:</strong> Anniversaries, Family Events</p>
+                </div>
+                <div class="venue-image">
+                    <img src="banquet.jpg" alt="Venue Four Image" onclick="openModal('banquet.jpg')">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script>
+        function openModal(imageSrc) {
+            document.getElementById("modalImage").src = imageSrc;
+            document.getElementById("imageModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("imageModal").style.display = "none";
+        }
+    </script>
+</body>
+</html>
