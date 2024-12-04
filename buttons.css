@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+    margin: 0;
+  }
+  
+  .button-container {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(2, auto);
+  }
+  
+  .btn {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+  }
+  
+  /* Button Styles */
+  
+  /* Basic Button */
+  .btn-basic {
+    background-color: #3498db;
+    color: white;
+  }
+  .btn-basic:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Shadow Effect */
+  .btn-shadow {
+    background-color: #e74c3c;
+    color: white;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  .btn-shadow:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Grow Effect */
+  .btn-grow {
+    background-color: #2ecc71;
+    color: white;
+  }
+  .btn-grow:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Shrink Effect */
+  .btn-shrink {
+    background-color: #9b59b6;
+    color: white;
+  }
+  .btn-shrink:hover {
+    transform: scale(0.9);
+  }
+  
+  /* Bounce Effect */
+  .btn-bounce {
+    background-color: #f1c40f;
+    color: white;
+  }
+  .btn-bounce:hover {
+    animation: bounce 0.5s;
+  }
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  /* Spin Effect */
+  .btn-spin {
+    background-color: #34495e;
+    color: white;
+  }
+  .btn-spin:hover {
+    transform: rotate(360deg);
+  }
+  
+  /* Glow Effect */
+  .btn-glow {
+    background-color: #1abc9c;
+    color: white;
+  }
+  .btn-glow:hover {
+    box-shadow: 0 0 15px rgba(26, 188, 156, 0.7);
+  }
+  
+  /* Border Expand */
+  .btn-border {
+    background-color: transparent;
+    color: #e67e22;
+    border: 2px solid #e67e22;
+  }
+  .btn-border:hover {
+    border-width: 4px;
+  }
+  
+  /* Slide Effect */
+  .btn-slide {
+    background-color: #d35400;
+    color: white;
+    position: relative;
+    overflow: hidden;
+  }
+  .btn-slide::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  .btn-slide:hover::after {
+    left: 0;
+  }
+  
+  /* Ripple Effect */
+  .btn-ripple {
+    background-color: #8e44ad;
+    color: white;
+    position: relative;
+    overflow: hidden;
+  }
+  .btn-ripple::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.6s ease;
+  }
+  .btn-ripple:hover::after {
+    width: 300%;
+    height: 300%;
+    opacity: 0;
+  }
+  
